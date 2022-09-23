@@ -15,12 +15,20 @@ public class Tablet extends Eletronico implements Notificacao{
 		System.out.println("c)~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 		
 	}
+	
+	private int caneta;
+	
+	public void caneta() {
+		System.out.println("Contem " + caneta + " caneta.\n");
+		
+	}
 		
 	public Tablet(String marca, String modelo, int ano, double valor) {
 		super(marca, modelo, ano, valor);
 		this.tela = "Média";
 		this.tipo = "Tablet";
 		this.setSurround(false);
+		this.caneta = 1;
 
 	}
 	

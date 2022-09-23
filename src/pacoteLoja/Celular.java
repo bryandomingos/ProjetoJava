@@ -6,8 +6,8 @@ public class Celular extends Eletronico implements Notificacao{
 	
 	@Override
 	public void somDeNotificacao( ) {
-		System.out.println("Celular:\n\nBling Bling Bling");		
-	
+		System.out.println("Celular:\n\nBling Bling Bling");	
+		
 	}
 		
 	@Override
@@ -16,11 +16,19 @@ public class Celular extends Eletronico implements Notificacao{
 		
 	}
 	
+	private int chip;
+	
+	public void chip() {
+		System.out.println("Contem compartimento para " + chip + " chip.\n");
+		
+	}
+	
 	public Celular(String marca, String modelo, int ano, double valor) {
 		super(marca, modelo, ano, valor);
 		this.tela = "Pequena";
 		this.tipo = "Celular";
 		this.setSurround(true);
+		this.chip = 1;
 		
 	}
 	

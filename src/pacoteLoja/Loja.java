@@ -106,7 +106,7 @@ public class Loja extends JFrame {
 			          case 6:
 			            	  
 			            	  	if (eletronicos.size() == 0) {
-			  					JOptionPane.showMessageDialog(null,"Primeiro adicione produtos.");
+			  					JOptionPane.showMessageDialog(null,"A lista está vazia.");
 			  					break;	
 			  				}
 			            	  	String dados = "";
@@ -218,7 +218,6 @@ public class Loja extends JFrame {
 				}    
 	     
 			} catch (EOFException e) {
-				System.out.println("Fim do arquivo.");
 				
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();

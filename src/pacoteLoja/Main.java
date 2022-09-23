@@ -19,21 +19,30 @@ public static void main(String[] args) {
 					Tablet tablet = new Tablet(null, null, 0, 0);
 					Notebook notebook = new Notebook(null, null, 0, 0);
 					
-					celular.somDeNotificacao( );
+					
+					celular.somDeNotificacao();
 					celular.produzSom();
 					if(Celular.getIsSurround() == true) {
 						System.out.println("c)~~~~~~~~~~~~~~~~~~~~~~~~~\n");
 					
-					tablet.somDeNotificacao( );
+					celular.chip();
+						
+					tablet.somDeNotificacao();
 					tablet.produzSom();
 					}
 					else if(Tablet.getIsSurround() == true) {
-						System.out.println("c)~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+						System.out.println("c)~~~~~~~~~~~~~~~~~~~~~~~~~\n");												
 					}
-					notebook.somDeNotificacao( );
+					
+					tablet.caneta();
+					
+					notebook.somDeNotificacao();
 					notebook.produzSom();
 					if(Notebook.getIsSurround() == true) {
 						System.out.println("c)~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+						
+					notebook.tecladoFisico();	
+						
 					}
 									
 				}
